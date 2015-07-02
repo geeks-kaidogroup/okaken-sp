@@ -1,0 +1,16 @@
+@charset "utf-8";
+// ============================
+// 共通パーツ読み込み
+// ============================
+@import "_variable";
+// ====================================
+// mixin
+// ====================================
+@mixin wrap($value:600px) {
+	width:$value;
+	margin:0 auto;
+}
+@mixin absolute($value:2) {
+	position:absolute;
+	z-index:$value;
+}
