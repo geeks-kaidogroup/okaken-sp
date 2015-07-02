@@ -244,6 +244,14 @@ img {
   padding: 0 0 40px 0;
 }
 
+.l-page-belief {
+  width: 600px;
+  margin: 0 auto;
+}
+.l-page-belief p {
+  line-height: 1.7;
+}
+
 /*==============================
 フッター
 ==============================*/
