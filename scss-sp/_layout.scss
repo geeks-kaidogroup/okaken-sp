@@ -59,6 +59,43 @@ img {
 ==============================*/
 .l-contents {
 }
+
+
+// ============================
+// l-footer
+// ============================
+/*==============================
+フッター
+==============================*/
+.l-footer {
+	position:relative;
+	margin:140px 0 0 0;
+	padding:77px 0 35px 0;
+	background:url(assets/img/module/bg_texture_red.jpg);
+	.go-top {
+		position:absolute;
+		top:-100px;
+		right:20px;
+	}
+	.copylight {
+		width:456px;
+		margin:0 auto;
+		text-align:center;
+		p {
+			padding:10px 0 0 0;
+			color:#FFF;
+			font-size:$fs-small - 10px;
+		}
+	}
+}
+
+
+// ============================
+// 下層
+// ============================
+/*==============================
+トップページ
+==============================*/
 .oyakata-voice {
 	@include wrap($value:600px);
 	p {
@@ -179,6 +216,10 @@ img {
 	padding:0 0 40px 0;
 }
 
+
+/*==============================
+おかけんの理念
+==============================*/
 .l-page-belief {
 	@include wrap($value:600px);
 	p {
@@ -187,31 +228,176 @@ img {
 }
 
 
-
-// ============================
-// l-footer
-// ============================
 /*==============================
-フッター
+他店との違い
 ==============================*/
-.l-footer {
-	position:relative;
-	margin:140px 0 0 0;
-	padding:77px 0 35px 0;
-	background:url(assets/img/module/bg_texture_red.jpg);
-	.go-top {
-		position:absolute;
-		top:-100px;
-		right:20px;
+.l-page-difference {
+	@include wrap($value:600px);
+	padding:0 0 160px 0;
+	p {
+		margin:0 0 45px 0;
+		line-height:1.7;
 	}
-	.copylight {
-		width:456px;
-		margin:0 auto;
-		text-align:center;
-		p {
-			padding:10px 0 0 0;
-			color:#FFF;
-			font-size:$fs-small - 10px;
+}
+
+
+/*==============================
+ご近所の施工例
+==============================*/
+.l-page-example {
+	@include wrap($value:600px);
+	padding:0 0 80px 0;
+	.example-box {
+		margin:0 0 60px 0;
+		.example-name {
+			margin:0 0 45px 0;
+			padding:32px 10px 10px 107px;
+			font-size:$fs-small + 13px;
+			background:url(assets/img/page/example/example_name_bg.png) no-repeat left;
+		}
+		.before-img {
+			margin:0 0 40px 0;
+		}
+		.before-title,.after-title {
+			line-height:1.5;
+			font-weight:bold;
 		}
 	}
 }
+
+
+/*==============================
+無料お見積り
+==============================*/
+.l-page-plan {
+	@include wrap($value:600px);
+	padding:0 0 120px 0;
+	.form-title {
+		margin:0 0 30px 0;
+		padding:10px 10px 10px 10px;
+		color:#FFF;
+		background:#191a1a;
+	}
+}
+
+/* contactform */
+/********************
+	contactform
+ ********************/
+
+.contact-need .kome,
+.contact-table .kome{
+	color: #9C0001;
+}
+
+.contact-table{
+	margin: 10px 0 0;
+	line-height: 1.6;
+}
+
+.contact-table th{
+	padding: 20px 17px;
+	width: 150px;
+	border: 1px solid #7D7D7D;
+	background: #f0ecd3;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: top;
+}
+
+.contact-table td{
+	padding: 15px 17px;
+	border-top: 1px solid #7D7D7D;
+	border-right: 1px solid #7D7D7D;
+	border-bottom: 1px solid #7D7D7D;
+	textarea {
+		width:395px;
+		height:200px;
+		font-size:24px;
+	}
+}
+
+span.wpcf7-list-item{
+	margin:0!important;
+}
+
+.contact-table label{
+	display: block;
+	line-height: 2;
+}
+
+.contact-table input[type="text"],
+.contact-table input[type="email"],
+.contact-table input[type="tel"]{
+	padding: 4px 5px;
+	width: 395px;
+	font-family: Helvetica,Arial,'lucida grande',tahoma,verdana,arial,"hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+	letter-spacing: 1px;
+	font-size:24px;
+	border: 1px solid #ccc;
+}
+
+.contact-table .mt{
+	margin: 10px 0 0;
+}
+
+.contact-table .ml{
+	margin: 0 0 0 10px;
+}
+
+.contact-table .ex{
+	font-size: 12px;
+}
+
+.contact-table td li{
+	margin: 10px 0 0;
+	font-weight: bold;
+}
+
+.contact-table td li input{
+	font-weight: normal;
+	margin: 0 0 0 20px;
+}
+
+.contact-btn,
+.estimate-btn{
+	text-align: center;
+}
+
+.contact-btn input{
+	height: 35px;
+	margin: 25px 0 0;
+	background: url(assets/img/page/estimate/estimate_btn.png) no-repeat 0 0;
+	border: none;
+	cursor: pointer;
+	text-indent: 999px;
+}
+
+.estimate-btn input{
+	height: 34px;
+	margin: 25px 0 0;
+	background: url(assets/img/btn/btn-send.png) no-repeat 0 0;
+	border: none;
+	cursor: pointer;
+}
+
+.otoiawase_label{
+	margin:0 auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
