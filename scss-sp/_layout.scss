@@ -49,6 +49,8 @@ img {
 メインビジュアル
 ==============================*/
 .l-mv {
+	width:640px;
+	margin:0 auto;
 }
 
 // ============================
@@ -58,6 +60,8 @@ img {
 コンテンツ
 ==============================*/
 .l-contents {
+	width:640px;
+	margin:0 auto;
 }
 
 
@@ -91,7 +95,7 @@ img {
 
 
 // ============================
-// 下層
+// TOP
 // ============================
 /*==============================
 トップページ
@@ -217,6 +221,10 @@ img {
 }
 
 
+
+// ============================
+// 下層
+// ============================
 /*==============================
 おかけんの理念
 ==============================*/
@@ -267,7 +275,7 @@ img {
 
 
 /*==============================
-無料お見積り
+無料お見積り・お問い合わせ・資料請求
 ==============================*/
 .l-page-plan {
 	@include wrap($value:600px);
@@ -315,6 +323,11 @@ img {
 		height:200px;
 		font-size:24px;
 	}
+	input[type="checkbox"] {
+		width:30px;
+		height:30px;
+		vertical-align:middle;
+	}
 }
 
 span.wpcf7-list-item{
@@ -360,43 +373,75 @@ span.wpcf7-list-item{
 }
 
 .contact-btn,
-.estimate-btn{
+.estimate-btn,
+.plan-btn{
 	text-align: center;
 }
-
-.contact-btn input{
-	height: 35px;
-	margin: 25px 0 0;
-	background: url(assets/img/page/estimate/estimate_btn.png) no-repeat 0 0;
+.submit input{
+	width:450px;
+	height: 81px;
+	margin: 50px 0 50px 0;
 	border: none;
 	cursor: pointer;
 	text-indent: 999px;
 }
-
-.estimate-btn input{
-	height: 34px;
-	margin: 25px 0 0;
-	background: url(assets/img/btn/btn-send.png) no-repeat 0 0;
-	border: none;
-	cursor: pointer;
+.contact-btn input {
+	background:url(assets/img/page/contact/btn_contact_submit.png) no-repeat 0 0;
 }
-
+.plan-btn input {
+	background:url(assets/img/page/plan/btn_plan_submit.png) no-repeat;
+}
+.estimate-btn input {
+	background:url(assets/img/page/contact/btn_request_submit.png) no-repeat;
+}
 .otoiawase_label{
 	margin:0 auto;
-  }
+}
 
 
+/*==============================
+本当のお客様の声
+==============================*/
+.l-page-customer {
+	@include wrap($value:600px);
+	padding:0 0 80px 0;
+}
+.customer-box {
+	margin:0 0 70px 0;
+	background:url(assets/img/page/real-voice/voice_bg.png);
+	.customer-name {
+		padding:8px 10px 8px 10px;
+		text-align:center;
+		font-size:$fs-small - 4px;
+		color:#FFF;
+		background:#000;
+	}
+	.inner-customer-box {
+		padding:25px 25px 25px 25px;
+		.customer-img {
+			margin:0 0 20px 0;
+		}
+		.customer-voice {
+			padding:13px 13px 13px 13px;
+			background:#FFF;
+			.customer-voice-title {
+				margin:0 0 10px 0;
+				line-height:1.3;
+				font-weight:bold;
+				border-bottom:solid 1px #6e6e6e;
+			}
+			p {
+				line-height:1.5;
+			}
+		}
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
+/*==============================
+会社概要
+==============================*/
+company
 
 
 
