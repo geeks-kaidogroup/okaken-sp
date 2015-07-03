@@ -371,31 +371,21 @@ span.wpcf7-list-item{
 	font-weight: normal;
 	margin: 0 0 0 20px;
 }
-
+.otoiawase_label{
+	margin:0 auto;
+}
 .contact-btn,
-.estimate-btn,
-.plan-btn{
+.estimate-btn{
 	text-align: center;
 }
-.submit input{
+.contact-btn input{
 	width:450px;
 	height: 81px;
 	margin: 50px 0 50px 0;
+	background: url(assets/img/page/contact/btn_contact_submit.png) no-repeat;
 	border: none;
 	cursor: pointer;
 	text-indent: 999px;
-}
-.contact-btn input {
-	background:url(assets/img/page/contact/btn_contact_submit.png) no-repeat 0 0;
-}
-.plan-btn input {
-	background:url(assets/img/page/plan/btn_plan_submit.png) no-repeat;
-}
-.estimate-btn input {
-	background:url(assets/img/page/contact/btn_request_submit.png) no-repeat;
-}
-.otoiawase_label{
-	margin:0 auto;
 }
 
 

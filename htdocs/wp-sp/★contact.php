@@ -1,42 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<title>お問い合わせ・資料請求</title>
-	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
-	<meta name="robots" content="index,follow">
-	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="assets/css/jquery.btnmenu.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="assets/js/common.js"></script>
-	<script src="assets/js/android-landscape.js"></script>
-	<script src="assets/js/btnmenu.js"></script>
-</head>
-<body>
-	<header class="l-header cf">
-		<h1 class="header-logo"><img src="assets/img/layout/header/header_logo.png" width="421" height="80" alt="おかけんリフォーム"></h1>
-		<a id="btnMenu" class="btn-menu"><img src="assets/img/layout/header/header_btn_menu.png" width="80" height="80" alt="menu"></a>
-	</header><!-- /.l-header -->
-
-	<nav class="l-navi" id="menu">
-		<ul>
-			<li class="menu-top"><a href="index.html">TOP</a></li>
-			<li><a href="#">おかけんの理念</a></li>
-			<li><a href="#">他店との違い</a></li>
-			<li><a href="#">お客様の声</a></li>
-			<li><a href="#">ご近所の施工例</a></li>
-			<li><a href="#">マスコミ取材</a></li>
-			<li><a href="#">会社概要</a></li>
-			<li><a href="#">無料お見積り</a></li>
-			<li><a href="#">お問い合わせ</a></li>
-		</ul>
-	</nav><!-- /.l-navi -->
-
+<?php include_once('header.php'); ?>
 	<section class="l-contents">
 		<section class="l-page-plan">
 			<img src="assets/img/page/contact/contact_headline.png" width="600" height="151" alt="お問い合わせ・資料請求">
 			<p class="form-title">お問い合わせフォーム</p>
-			<form>
+			<form action="https://24auto.biz/alljapan01/responder.php" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="mcode" value="UTF-8">
+			<input type="hidden" name="tno" value="178">
 			<table class="contact-table">
 			<tbody><tr><th>お名前<span class="kome">＊</span><br></th>
 			<td>
@@ -83,7 +52,9 @@
 			
 			<p class="form-title">資料請求フォーム</p>
 			
-			<form>
+			<form action="https://24auto.biz/alljapan01/responder.php" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="mcode" value="UTF-8">
+			<input type="hidden" name="tno" value="177">
 			<table class="contact-table">
 			<tbody><tr>
 			<th>請求資料</th>
@@ -133,28 +104,7 @@
 			<td><p class="contact-btn"><input type="submit" name="sbm" value=""></p></td>
 			</tr>
 			</tbody></table>
-
 			</form>
 			
 		</section>
-		<div class="btn-tel">
-			<a href="tel:0120666932"><img src="assets/img/btn/btn_tel.png" width="600" height="120" alt="お電話でご相談（電話コール）"></a>
-		</div>
-		<ul class="btn-set">
-			<li><a href="#"><img src="assets/img/btn/btn_estimate.png" width="601" height="101" alt="無料お見積はこちらから"></a></li>
-			<li><a href="#"><img src="assets/img/btn/btn_request.png" width="601" height="101" alt="資料請求"></a></li>
-			<li><a href="#"><img src="assets/img/btn/btn_contact.png" width="601" height="101" alt="お問い合わせ"></a></li>
-		</ul>
-	</section><!-- /.l-contents -->
-
-	<footer class="l-footer">
-		<div class="go-top">
-			<a href="#"><img src="assets/img/module/btn_to_top.jpg" width="100" height="100" alt="ページTOPへ"></a>
-		</div>
-		<div class="copylight">
-			<img src="assets/img/layout/footer/footer_logo.png" width="455" height="95" alt="おかけんリフォーム">
-			<p><small>Copyright © 2015 Okakensan Ltd. All rights reserved.</small></p>
-		</div>
-	</footer>
-</body>
-</html>
+<?php include_once('footer.php'); ?>

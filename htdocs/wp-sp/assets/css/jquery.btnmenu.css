@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.l-navi#menu {
+	width: 530px;
+	z-index: 10000;
+	position: absolute;
+	right: 0;
+	top: 119px;
+	background-color: rgba(21, 21, 21, 0.8);
+	display: none;
+}
+.l-navi#menu ul{
+	width:530px;
+	margin:auto;
+	font-size:36px;
+}
+.l-navi#menu ul li {
+	text-align:center;
+	border-bottom:solid 2px #181818;
+}
+.l-navi#menu ul li:last-child {
+	border:none;
+}
+.l-navi#menu ul li a {
+	display:block;
+	padding:28px 0 28px 0;
+	color:#FFF;
+	text-decoration:none;
+}
+.l-navi#menu .menu-top{
+	background-color:#982b4c;
+}
+.l-navi#menu .list{
+	display:block;
+	padding:29px 0 25px 40px;
+	height:26px;
+	line-height:26px;
+	font-size:22px;
+	font-weight:bold;
+	background:url(../img/module/nav_icon.png) 12px center no-repeat;
+}
+.l-navi#menu .list.line2{
+	display:block;
+	padding:16px 0 12px 40px;
+	height:52px;
+	line-height:26px;
+}
+
+.l-navi#menu .list:link,
+.l-navi#menu .list:visited,
+.l-navi#menu .list:hover{
+	color:#454545;
+	text-decoration:none;
+}
