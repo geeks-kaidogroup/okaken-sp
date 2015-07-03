@@ -1,66 +1,554 @@
-/*
-Error: Invalid CSS after "company": expected "{", was ""
-        on line 449 of C:/Users/pc3/Documents/myfolder/okaken-sp/repos/scss-sp/_layout.scss
-        from line 20 of C:/Users/pc3/Documents/myfolder/okaken-sp/repos/scss-sp/./style.scss
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-444: company
+html {
+  line-height: 1;
+}
 
-Backtrace:
-C:/Users/pc3/Documents/myfolder/okaken-sp/repos/scss-sp/_layout.scss:449
-C:/Users/pc3/Documents/myfolder/okaken-sp/repos/scss-sp/./style.scss:20
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:1165:in `expected'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:1101:in `expected'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:1096:in `tok!'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:641:in `block'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:635:in `ruleset'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:660:in `block_child'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:653:in `block_contents'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:117:in `stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/engine.rb:393:in `_to_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/engine.rb:299:in `to_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/engine.rb:268:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.10/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"company\": expected \"{\", was \"\"\A         on line 449 of C:/Users/pc3/Documents/myfolder/okaken-sp/repos/scss-sp/_layout.scss\A         from line 20 of C:/Users/pc3/Documents/myfolder/okaken-sp/repos/scss-sp/./style.scss\A \A 444: company"; }
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* General */
+.float-list, .cf {
+  *zoom: 1;
+}
+.float-list:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-size: 24px;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+img {
+  vertical-align: middle;
+}
+
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+  padding: 20px 0 20px 0;
+  background: url(assets/img/module/bg_texture_red.jpg);
+}
+.l-header .header-logo {
+  float: left;
+  margin: 0 57px 0 60px;
+}
+.l-header .btn-menu {
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+/*==============================
+グローバルナビ
+==============================*/
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/*==============================
+フッター
+==============================*/
+.l-footer {
+  position: relative;
+  margin: 140px 0 0 0;
+  padding: 77px 0 35px 0;
+  background: url(assets/img/module/bg_texture_red.jpg);
+}
+.l-footer .go-top {
+  position: absolute;
+  top: -100px;
+  right: 20px;
+}
+.l-footer .copylight {
+  width: 456px;
+  margin: 0 auto;
+  text-align: center;
+}
+.l-footer .copylight p {
+  padding: 10px 0 0 0;
+  color: #FFF;
+  font-size: 14px;
+}
+
+/*==============================
+トップページ
+==============================*/
+.oyakata-voice {
+  width: 600px;
+  margin: 0 auto;
+}
+.oyakata-voice p {
+  margin: 40px 0 0 0;
+  line-height: 1.5;
+}
+.oyakata-voice .img-oyakata {
+  float: right;
+}
+
+.top-where {
+  background: url(assets/img/top/top_where_case.png);
+}
+.top-where p {
+  padding: 460px 65px 30px 65px;
+  line-height: 1.7;
+}
+
+.top-craftsman-area {
+  padding-bottom: 455px;
+  background: url(assets/img/top/top_craftsman_img.jpg) no-repeat bottom, url(assets/img/module/bg_note.jpg);
+}
+.top-craftsman-area .top-craftsman-headline {
+  padding: 0 0 40px 0;
+}
+.top-craftsman-area .top-craftsman-list {
+  width: 600px;
+  margin: 0 auto;
+}
+.top-craftsman-area .top-craftsman-list li {
+  float: left;
+  margin: 0 45px 35px 0;
+}
+.top-craftsman-area .top-craftsman-list li:nth-child(even) {
+  margin: 0 0 35px 0;
+}
+
+.difference-box {
+  padding: 80px 35px 85px 22px;
+  background: url(assets/img/top/bg_bef_af.png) no-repeat;
+}
+.difference-box .customer-data {
+  float: left;
+  width: 242px;
+  margin: 34px 0 0 0;
+  font-size: 30px;
+  color: #e60000;
+  font-weight: bold;
+  border-bottom: solid 1px #e60000;
+}
+.difference-box .customer-data .data-name {
+  margin: 0 0 35px 0;
+  line-height: 1.2;
+}
+.difference-box .customer-before {
+  float: left;
+  margin: 0 0 0 25px;
+}
+.difference-box .customer-after {
+  margin: 154px 0 0 43px;
+}
+
+.voice-area {
+  margin: 0 0 40px 0;
+  padding-bottom: 335px;
+  background: url(assets/img/top/top_voice_bottom.jpg) no-repeat bottom, url(assets/img/module/bg_note.jpg);
+}
+
+.voice-box {
+  width: 565px;
+  margin: 30px auto 30px auto;
+  padding: 20px 15px 20px 20px;
+  border: solid 2px #818080;
+  background: url(assets/img/module/bg_note_white.jpg);
+}
+.voice-box .voice-data-area {
+  margin: 0 0 30px 0;
+}
+.voice-box .voice-data {
+  float: left;
+  width: 345px;
+  padding: 10px 0 0 0;
+  font-weight: bold;
+}
+.voice-box .voice-data .voice-title {
+  padding: 5px 0 5px 85px;
+  font-size: 28px;
+  color: #cf1616;
+  line-height: 1.2;
+  background: url(assets/img/top/voice_balloon.png) no-repeat left top;
+}
+.voice-box .voice-data .voice-name {
+  padding: 20px 0 0 0;
+  color: #163c9d;
+}
+.voice-box .voice-img {
+  float: right;
+}
+.voice-box .voice-text {
+  line-height: 1.5;
+}
+
+.warranty-box {
+  width: 600px;
+  margin: 0 auto;
+}
+.warranty-box .warranty-img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.warranty-box p {
+  line-height: 1.5;
+}
+
+.please-call {
+  margin: 0 0 50px 0;
+}
+
+.btn-set {
+  width: 600px;
+  margin: 0 auto;
+}
+.btn-set li {
+  margin: 0 0 40px 0;
+}
+
+.btn-tel {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+}
+
+/*==============================
+おかけんの理念
+==============================*/
+.l-page-belief {
+  width: 600px;
+  margin: 0 auto;
+}
+.l-page-belief p {
+  line-height: 1.7;
+}
+
+/*==============================
+他店との違い
+==============================*/
+.l-page-difference {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 160px 0;
+}
+.l-page-difference p {
+  margin: 0 0 45px 0;
+  line-height: 1.7;
+}
+
+/*==============================
+ご近所の施工例
+==============================*/
+.l-page-example {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 80px 0;
+}
+.l-page-example .example-box {
+  margin: 0 0 60px 0;
+}
+.l-page-example .example-box .example-name {
+  margin: 0 0 45px 0;
+  padding: 32px 10px 10px 107px;
+  font-size: 37px;
+  background: url(assets/img/page/example/example_name_bg.png) no-repeat left;
+}
+.l-page-example .example-box .before-img {
+  margin: 0 0 40px 0;
+}
+.l-page-example .example-box .before-title, .l-page-example .example-box .after-title {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/*==============================
+無料お見積り・お問い合わせ・資料請求
+==============================*/
+.l-page-plan {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 120px 0;
+}
+.l-page-plan .form-title {
+  margin: 0 0 30px 0;
+  padding: 10px 10px 10px 10px;
+  color: #FFF;
+  background: #191a1a;
+}
+
+/* contactform */
+/********************
+	contactform
+ ********************/
+.contact-need .kome,
+.contact-table .kome {
+  color: #9C0001;
+}
+
+.contact-table {
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
+.contact-table th {
+  padding: 20px 17px;
+  width: 150px;
+  border: 1px solid #7D7D7D;
+  background: #f0ecd3;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+}
+
+.contact-table td {
+  padding: 15px 17px;
+  border-top: 1px solid #7D7D7D;
+  border-right: 1px solid #7D7D7D;
+  border-bottom: 1px solid #7D7D7D;
+}
+.contact-table td textarea {
+  width: 395px;
+  height: 200px;
+  font-size: 24px;
+}
+.contact-table td input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+span.wpcf7-list-item {
+  margin: 0 !important;
+}
+
+.contact-table label {
+  display: block;
+  line-height: 2;
+}
+
+.contact-table input[type="text"],
+.contact-table input[type="email"],
+.contact-table input[type="tel"] {
+  padding: 4px 5px;
+  width: 395px;
+  font-family: Helvetica,Arial,'lucida grande',tahoma,verdana,arial,"hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;
+  letter-spacing: 1px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+}
+
+.contact-table .mt {
+  margin: 10px 0 0;
+}
+
+.contact-table .ml {
+  margin: 0 0 0 10px;
+}
+
+.contact-table .ex {
+  font-size: 12px;
+}
+
+.contact-table td li {
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+.contact-table td li input {
+  font-weight: normal;
+  margin: 0 0 0 20px;
+}
+
+.contact-btn,
+.estimate-btn,
+.plan-btn {
+  text-align: center;
+}
+
+.submit input {
+  width: 450px;
+  height: 81px;
+  margin: 50px 0 50px 0;
+  border: none;
+  cursor: pointer;
+  text-indent: 999px;
+}
+
+.contact-btn input {
+  background: url(assets/img/page/contact/btn_contact_submit.png) no-repeat 0 0;
+}
+
+.plan-btn input {
+  background: url(assets/img/page/plan/btn_plan_submit.png) no-repeat;
+}
+
+.estimate-btn input {
+  background: url(assets/img/page/contact/btn_request_submit.png) no-repeat;
+}
+
+.otoiawase_label {
+  margin: 0 auto;
+}
+
+/*==============================
+本当のお客様の声
+==============================*/
+.l-page-customer {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 80px 0;
+}
+
+.customer-box {
+  margin: 0 0 70px 0;
+  background: url(assets/img/page/real-voice/voice_bg.png);
+}
+.customer-box .customer-name {
+  padding: 8px 10px 8px 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #FFF;
+  background: #000;
+}
+.customer-box .inner-customer-box {
+  padding: 25px 25px 25px 25px;
+}
+.customer-box .inner-customer-box .customer-img {
+  margin: 0 0 20px 0;
+}
+.customer-box .inner-customer-box .customer-voice {
+  padding: 13px 13px 13px 13px;
+  background: #FFF;
+}
+.customer-box .inner-customer-box .customer-voice .customer-voice-title {
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  font-weight: bold;
+  border-bottom: solid 1px #6e6e6e;
+}
+.customer-box .inner-customer-box .customer-voice p {
+  line-height: 1.5;
+}
+
+/*==============================
+会社概要
+==============================*/
+.l-page-company {
+  width: 600px;
+  margin: 0 auto;
+}
+.l-page-company .company-toparea {
+  margin: 0 0 85px 0;
+}
+.l-page-company .company-toparea p {
+  line-height: 1.5;
+}
+
+.company-title {
+  padding: 5px 10px 5px 10px;
+  line-height: 1.5;
+  font-size: 20px;
+  color: #FFF;
+  background: #191a1a;
+}
+
+.company-data {
+  margin: 0 0 100px 0;
+}
+.company-data .company-title {
+  margin: 0 0 35px 0;
+}
+.company-data dl {
+  line-height: 1.5;
+}
+.company-data dt {
+  float: left;
+  width: 230px;
+}
+.company-data dd {
+  margin: 0 0 10px 0;
+  padding: 0 0 5px 230px;
+  border-bottom: solid 1px #000;
+}
+
+/*==============================
+マスコミ掲載
+==============================*/
+.l-page-mass {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 0 145px 0;
+}
+.l-page-mass p {
+  line-height: 1.8;
+}

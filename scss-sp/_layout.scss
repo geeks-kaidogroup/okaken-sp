@@ -441,7 +441,67 @@ span.wpcf7-list-item{
 /*==============================
 会社概要
 ==============================*/
-company
+.l-page-company {
+	@include wrap($value:600px);
+	.company-toparea {
+		margin:0 0 85px 0;
+		p {
+			line-height:1.5;
+		}
+	}
+}
+.company-title {
+	padding:5px 10px 5px 10px;
+	line-height:1.5;
+	font-size:$fs-small - 4px;
+	color:#FFF;
+	background:#191a1a;
+}
+.company-data {
+	margin:0 0 100px 0;
+	.company-title {
+		margin:0 0 35px 0;
+	}
+	dl {
+		line-height:1.5;
+	}
+	dt {
+		float:left;
+		width:230px;
+	}
+	dd {
+		margin:0 0 10px 0;
+		padding:0 0 5px 230px;
+		border-bottom:solid 1px #000;
+	}
+}
+
+
+/*==============================
+マスコミ掲載
+==============================*/
+.l-page-mass {
+	@include wrap($value:600px);
+	padding:0 0 145px 0;
+	p {
+		line-height:1.8;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
